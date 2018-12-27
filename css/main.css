@@ -1,0 +1,150 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 81%, 66% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 81%, 66% 100%, 0 100%, 0 0);
+  background-color: #005dff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 80% 0, 54% 100%, 0% 100%);
+            clip-path: polygon(0 0, 80% 0, 54% 100%, 0% 100%);
+  }
+}
+
+body header {
+  padding: 15px;
+}
+
+body header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
+}
+
+main section {
+  margin: 15px;
+}
+
+main section#card {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 840px) {
+  main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 4em;
+  }
+}
+
+main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 10px;
+}
+
+main section#card ul li span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ccdfff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main section#card ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+main section#primary {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
+}
+
+main section#primary h1 {
+  color: #fff;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  main section#primary h1 {
+    width: 30%;
+    font-size: 3rem;
+  }
+}
+
+main section#primary p {
+  font-size: 1.4em;
+}
+
+main section#primary a {
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+  background-color: #fff6bb;
+  text-align: center;
+  margin: 50px auto;
+  display: inline-block;
+  padding: 15px;
+}
+
+@media (min-width: 840px) {
+  main section#primary a {
+    padding: 15px 60px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
